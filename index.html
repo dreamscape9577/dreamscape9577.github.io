@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./src/reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Vanilla JS Challenge</title>
+    </head>
+    <body>
+        <div id="leftWindow">
+            <div id="todoBox">
+                <div id="dateBox"><span id="date">Today</span></div>
+                <div id="clockBox"><span id="clock">Current Time</span></div>
+                <form class="hidden" id="login-form">
+                    <input
+                        required
+                        maxlength="15"
+                        type="text"
+                        placeholder="What is your name?" />
+                    <input type="submit" value="Log In" />
+                </form>
+                <h1 class="hidden" id="greeting"></h1>
+                <form id="todo-form">
+                    <input
+                        id="todoInput"
+                        type="text"
+                        placeholder="Write a To Do and Press Enter"
+                        required />
+                </form>
+                <ul id="todo-list"></ul>
+            </div>
+            <div id="localInfo">
+                <div id="locationBox">
+                    <span id="location">Your current location</span>
+                </div>
+                <div id="weatherBox">
+                    <span id="weather">The current weather where you are</span>
+                </div>
+            </div>
+        </div>
+
+        <script src="./src/Time.js"></script>
+        <script src="./src/Background.js"></script>
+        <script src="./src/Location.js"></script>
+        <script src="./src/Todo.js"></script>
+        <script src="./src/UserName.js"></script>
+    </body>
+</html>

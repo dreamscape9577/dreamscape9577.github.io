@@ -1,0 +1,100 @@
+body {
+    height: 100vh;
+    background-color: dimgray;
+    background: url(/images/photo-1553649033-3fbc8d0fa3cb.avif) no-repeat center;
+    background-size: cover;
+    display: flex;
+}
+
+#greeting {
+    margin-bottom: 10px;
+}
+
+#login-form {
+    display: grid;
+    width: 328px;
+    height: 75px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+#login-form.hidden {
+    display: none;
+}
+
+#todoBox,
+#localInfo {
+    width: 350px;
+    height: 450px;
+    color: white;
+    background-color: rgba(21, 21, 21, 0.8);
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#localInfo {
+    height: auto;
+    padding: 0px 15px;
+    display: flex;
+    margin-top: 0px;
+}
+
+#dateBox,
+#clockBox {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+#clockBox {
+    font-size: 18px;
+    color: #8f8f8f;
+    padding-bottom: 30px;
+}
+
+#todoInput {
+    width: 320px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#todo-list {
+    width: 328px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    width: 328px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+li > span {
+    display: inline-block;
+    width: 280px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+li > button {
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgba(146, 194, 255);
+}
+
+#locationBox,
+#weatherBox {
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 4px;
+    padding-bottom: 20px;
+    color: yellowgreen;
+}
+.hidden {
+    display: none;
+}
